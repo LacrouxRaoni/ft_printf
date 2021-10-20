@@ -1,22 +1,23 @@
-NAME	:= libftprintf.a
+NAME	= libftprintf.a
 
-PATH_LIBFT	:= ./libft
+PATH_LIBFT	= ./libft
 
-LIBFT	:= ./libft/libft.a
+LIBFT	= ./libft/libft.a
 
-CC	:= clang
+CC	= clang
 
-CFLAGS	:= -Wall -Werror -Wextra
+CFLAGS	= -Wall -Werror -Wextra
 
-SRC	:=	ft_printf.c \
+SRC	=	ft_printf.c \
 		ft_printf_csdiu%.c \
 		ft_printf_pxX.c \
 		ft_usgitoa.c \
 		ft_hxitoa.c \
 
-OBJ	:= $(SRC:.c=.o)
 
-all:	$(NAME)
+OBJ	=	$(SRC:.c=.o)
+
+all:	$(NAME) $(LIBFT)
 
 $(NAME):	$(LIBFT) $(OBJ)
 	cp $(LIBFT) $(NAME)
