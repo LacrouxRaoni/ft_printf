@@ -6,7 +6,7 @@
 /*   By: rruiz-la <rruiz-la@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 22:01:06 by rruiz-la          #+#    #+#             */
-/*   Updated: 2021/08/11 22:01:07 by rruiz-la         ###   ########.fr       */
+/*   Updated: 2021/10/20 20:53:30 by rruiz-la         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	size_t	tot_size;
 	size_t	*pos;
-	 int	fill_bite;
+	int		fill_bite;
 
 	tot_size = nmemb * size;
 	fill_bite = 0;
