@@ -6,7 +6,7 @@
 /*   By: rruiz-la <rruiz-la@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/25 18:44:18 by rruiz-la          #+#    #+#             */
-/*   Updated: 2021/09/26 15:13:19 by rruiz-la         ###   ########.fr       */
+/*   Updated: 2021/10/25 16:16:59 by rruiz-la         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,9 @@
 # include <stdarg.h>
 # include <unistd.h>
 # include <stdlib.h>
+# include "libft/libft.h"
 
-size_t	ft_strlen(const char *s);
-char	*ft_itoa(int n);
 char	*ft_usg_itoa(unsigned int n);
-char	*ft_strdup(const char *s);
 int		ft_printf(const char *format, ...);
 int		check_letter(const char *format, va_list arg);
 int		convert_arg_char(const char format, va_list arg);
